@@ -1,0 +1,21 @@
+{
+  "name": "usdx-layer",
+  "version": "0.1.0",
+  "description": "Deterministic execution and routing abstraction derived from USD1 usage",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "node scripts/lint.ts",
+    "typecheck": "node scripts/typecheck.ts",
+    "test": "node --test",
+    "sim": "node scripts/run-simulation.ts",
+    "ci": "npm run typecheck && npm run lint && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  }
+}
